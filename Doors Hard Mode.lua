@@ -53,7 +53,7 @@ Lighting.Ambient = Color3.new(255, 0, 0)
 Lighting.Brightness = 0.1
 Lighting.FogEnd = 50
 Lighting.FogStart = 35
-Lighting.FogColor = Color3.new(0, 0, 0)
+Lighting.FogColor = Color3.new(255, 253, 254)
 
 -- goofy screech
 game.ReplicatedStorage.Entities.Screech.Top.Eyes.Color = Color3.fromRGB(255, 255, 0)
