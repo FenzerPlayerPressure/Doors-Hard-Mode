@@ -164,4 +164,8 @@ coroutine.wrap(function()
         wait(245)
         game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
         wait(0)
-loadstring(game:HttpGet("https://pastebin.com/raw/pm2GUxHV"))()      
+loadstring(game:HttpGet("https://pastebin.com/raw/pm2GUxHV"))() 
+
+        end
+
+    end)()
