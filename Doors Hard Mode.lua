@@ -47,13 +47,38 @@ sound:Play()
 
 sound.Parent = workspace
 
--- new fog
-local Lighting = game:GetService("Lighting")
-Lighting.Ambient = Color3.new(255, 0, 0)
-Lighting.Brightness = 0.1
-Lighting.FogEnd = 50
-Lighting.FogStart = 35
-Lighting.FogColor = Color3.new(255, 253, 254)
+--RTX 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Flybobbb/robloxscripts/main/rtx.lua"))()
+
+--fortress theme
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Floor 2 Script Is Successfully Executed",true)
+
+game.Workspace.CurrentRooms.ChildAdded:Connect(function(Room)
+    task.wait(1.5)
+    if Room:IsA("Model") then
+        if tonumber(Room.Name) ~= nil then
+            for _, v in pairs(Room.Parts:GetDescendants()) do
+                if v:IsA("Part") or v:IsA("BasePart") or v:IsA("MeshPart") or v:IsA("UnionOperation") then
+                    if v.Material == Enum.Material.Wood or v.Material == Enum.Material.WoodPlanks then
+                        v.Color = Color3.fromRGB(60, 60, 60)
+                        v.Material = Enum.Material.Brick
+                        v.MaterialVariant = ""
+                    end
+                end
+            end
+        end
+    end
+end)()
+
+-- Door Floor 2 Door By Noah
+coroutine.wrap(function()
+    while true do
+        wait(0.0005)
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value].Door.Door.Open.SoundId = "rbxassetid://833871080"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door").Material = "Slate"
+workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:FindFirstChild("Door"):FindFirstChild("Door"):FindFirstChild("Sign").Material = "Slate"
+    end
+end)()
 
 -- goofy screech
 game.ReplicatedStorage.Entities.Screech.Top.Eyes.Color = Color3.fromRGB(255, 255, 0)
@@ -66,6 +91,9 @@ game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Mod
 
 -- goofy spider
 game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.RemoteListener.Modules.SpiderJumpscare.Scare.SoundId = "rbxassetid://8080941676"
+
+--goofy seek
+loadstring(game:HttpGet('https://raw.githubusercontent.com/StovenChaos/Doors/main/Old%20seek.lua'))()
 
 -- Bluyer
 coroutine.wrap(function()
@@ -166,6 +194,30 @@ coroutine.wrap(function()
         wait(0)
 loadstring(game:HttpGet("https://pastebin.com/raw/pm2GUxHV"))() 
 
+        end
+
+    end)()
+
+--Depth
+coroutine.wrap(function()
+    while true do
+        wait(234)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet("https://pastebin.com/raw/uyYe9bZQ"))()
+
+        end
+
+    end)()
+
+--Blackout
+coroutine.wrap(function()
+    while true do
+        wait(135)
+        game.ReplicatedStorage.GameData.LatestRoom.Changed:Wait()
+        wait(0)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Jahani-john/mayhem-mode/main/mayhemmode-main/ObfuscatedEntities/Blackout-obfuscated.lua'))()
+       
         end
 
     end)()
