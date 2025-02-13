@@ -34,7 +34,7 @@ achievementGiver({
     Image = "rbxassetid://"
 })
 
--crucifix
+--crucifix
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FenzerPlayerPressure/Crucifix-Hard-Mode/refs/heads/main/Crufix%20lua"))()
 
 --Cave ambience
