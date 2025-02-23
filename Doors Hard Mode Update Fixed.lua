@@ -34,9 +34,6 @@ achievementGiver({
     Image = "rbxassetid://"
 })
 
---crucifix
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FenzerPlayerPressure/Crucifix-Hard-Mode/refs/heads/main/Crufix%20lua"))()
-
 --Cave ambience
 local sound = Instance.new("Sound")
 
