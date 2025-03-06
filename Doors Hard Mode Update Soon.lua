@@ -1,6 +1,7 @@
 require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Doors Hard Mode Executed",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Have Fun",true)
 wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Credits To Artemis, Oof",true)
+wait(2) require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("U Can Play Mode While Im Updating Hard Mode",true)
 
 -- intro to the hard hotel
 local shut = game.Players.LocalPlayer.PlayerGui.MainUI.MainFrame.IntroText
